@@ -2,7 +2,7 @@
 ------------------------------------------------------
 
 NOTE:
-"theory.js" is compiled from "theory.coffee"
+"1dscreen.js" is compiled from "1dscreen.coffee"
 
 TOOLS:
    - RaphaelJS
@@ -10,7 +10,7 @@ TOOLS:
 
 DESCRIPTION:
 This script creates interactive figures for learning
-about different projections used in Quake Lenses.
+about different projections used in Blinky.
 
 ------------------------------------------------------
 ###
