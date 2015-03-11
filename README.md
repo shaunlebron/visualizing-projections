@@ -1,5 +1,7 @@
 # Visualizing Projections
 
+![screen](screen.png)
+
 __[An interactive demonstration of intuitive projections](http://shaunlebron.github.io/visualizing-projections)__
 
 Created to illustrate concepts in
