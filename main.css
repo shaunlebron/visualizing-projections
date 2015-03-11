@@ -1,7 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
 
 div#container
 {
-    line-height: 1.5em;
-    margin-left: 20px;
-    width: 650px;
+  padding: 40px;
+  width: 650px;
+  margin: 0 auto;
 }
+
+h1 {
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+p#author {
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: "Roboto Slab";
+  margin-top: 32px;
+  font-weight: 400;
+  color: #333;
+}
+
+p {
+  line-height: 1.6em;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
