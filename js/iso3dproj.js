@@ -360,7 +360,7 @@ var iso3dproj = (function(){
   var cube, camera;
 
   var imgCaptions = new Image();
-  imgCaptions.src = "iso3dproj.png";
+  imgCaptions.src = "img/iso3dproj.png";
 
   var lastTime;
   function tick(time) {

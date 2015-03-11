@@ -349,7 +349,7 @@ var iso2dproj = (function(){
   var cube, camera;
 
   var imgCaptions = new Image();
-  imgCaptions.src = "iso2dproj.png";
+  imgCaptions.src = "img/iso2dproj.png";
 
   var lastTime;
   function tick(time) {

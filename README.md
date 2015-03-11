@@ -1,11 +1,17 @@
 # Visualizing Projections
 
-![screen](screen.png)
+[An interactive demonstration of intuitive projections](http://shaunlebron.github.io/visualizing-projections)
 
-__[An interactive demonstration of intuitive projections](http://shaunlebron.github.io/visualizing-projections)__
+[![screen](img/screen.png)](http://shaunlebron.github.io/visualizing-projections)
 
-Created to illustrate concepts in
-[Blinky](http://github.com/shaunlebron/blinky), a demo exploring different
-projections in Quake.
+The visualizations were created to illustrate concepts from
+[Blinky](http://github.com/shaunlebron/blinky), and later became a 1D game
+concept [BL1ND](https://github.com/shaunlebron/bl1nd-ld28).
 
-This illustration actually lead to a 1D game concept, [BL1ND](https://github.com/shaunlebron/bl1nd-ld28).
+The code here is an amalgam of two old projects I made years ago but never published.
+
+## License
+
+Copyright © 2015 Shaun Williams
+
+MIT License
