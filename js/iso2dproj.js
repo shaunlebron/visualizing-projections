@@ -222,12 +222,17 @@ var iso2dproj = (function(){
         return obj;
       }
       function drawFace(f) {
+        var high = {x: 0, y: 0, z: 0};
+        var low = {x: 0, y: 0, z: 0};
+        var i;
+        for (i=0; i<4; i++) {
+          var p = transform(verts[f.indices[i]]);
+          if (p.y >= high.y) { high = p; }
+          if (p.y <= low.y) { low = p; }
+        }
         ctx.beginPath();
-        spaceCtx.moveTo(transform(verts[f.indices[0]]));
-        spaceCtx.lineTo(transform(verts[f.indices[1]]));
-        spaceCtx.lineTo(transform(verts[f.indices[2]]));
-        spaceCtx.lineTo(transform(verts[f.indices[3]]));
-        ctx.closePath();
+        spaceCtx.moveTo(high);
+        spaceCtx.lineTo(low);
         ctx.strokeStyle = colors[hue][f.shade];
         ctx.lineWidth = 6;
         ctx.stroke();
@@ -326,7 +331,7 @@ var iso2dproj = (function(){
       var vendors = ['ms', 'moz', 'webkit', 'o'];
       for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
           window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-          window.cancelAnimationFrame = 
+          window.cancelAnimationFrame =
       window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
       }
 
@@ -334,7 +339,7 @@ var iso2dproj = (function(){
       window.requestAnimationFrame = function(callback, element) {
           var currTime = new Date().getTime();
           var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-          var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+          var id = window.setTimeout(function() { callback(currTime + timeToCall); },
               timeToCall);
           lastTime = currTime + timeToCall;
           return id;
